@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Music Player" />
+    <meta name="keywords" content="Musics" />
+    <meta name="Author" content="Hasanov Arif" />
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital@1&family=Cousine&family=DM+Sans:opsz@9..40&family=Doppio+One&family=Graduate&family=Inter&family=League+Gothic&family=Montserrat&family=MuseoModerno&family=Orbitron&family=Outfit&family=Plus+Jakarta+Sans:ital@0;1&family=Poppins&family=Racing+Sans+One&family=Roboto&family=Rufina&family=Sanchez&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <section class="container">
+      <div class="top-container">
+        <h2>Now Playing</h2>
+      </div>
+      <audio class="audio" src="./musics/Paster - Yeniden 2020.mp3"></audio>
+      <div class="image-container">
+        <img
+          class="cover"
+          src="./img/yeniden.jpg"
+          alt="music-cover"
+        />
+      </div>
+     <div class="music-info">
+        <h2 class="title">Paster Yeniden</h2>
+        <div class="progress-container">
+            <div class="progress"></div>
+          </div>
+     </div>
+      <div class="button">
+        <button class="prev-button"><i class="fa-solid fa-backward"></i></button>
+        <button class="play-button"><i class="fa-solid fa-play"></i></button>
+        <button class="forward-button"><i class="fa-solid fa-forward"></i></button>
+      </div>
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

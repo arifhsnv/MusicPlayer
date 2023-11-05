@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(270deg, #C4E7E1 3.71%, #FABFBB 98.75%);
+}
+.top-container{
+    width: 100%;
+    height: 10vh;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.top-container h2{
+    color: #FFF;
+text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+font-family: 'Sanchez', serif;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-left: 20px;
+margin-inline: auto;
+}
+.title{
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image-container{
+    width: 278px;
+height: 278px;
+border-radius: 278px;
+box-shadow: 2px 9px 21px 0px rgba(0, 0, 0, 0.25);
+margin-inline: auto;
+margin-top: 10px;
+}
+.image-container .cover{
+    width: 278px;
+    height: 278px;
+    border-radius: 278px;
+    animation: rotate 7s linear infinite;
+    animation-play-state: paused;
+}
+.container.play .image-container img{
+    animation-play-state: running;
+}
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+.progress-container{
+    width: 251px;
+height: 10px;
+border-radius: 10px;
+background: #FFF;
+box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25);
+margin-inline: auto;
+margin-top: 20px;
+cursor: pointer;
+}
+.progress-container .progress{
+    width: 0;
+height: 10px;
+background: linear-gradient(90deg, #DA8A85 4.87%, #B47772 144.47%);
+cursor: pointer;
+}
+.button{
+    width: 100%;
+    height: 10vh;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 40px;
+}
+
+.button .prev-button{
+border: none;
+outline: none;
+background:transparent ;
+color: white;
+font-size: 28px;
+cursor: pointer;
+
+}
+.button .play-button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    font-size: 36px;
+    cursor: pointer;
+}
+.button .forward-button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
